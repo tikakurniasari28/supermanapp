@@ -1636,71 +1636,37 @@ body:has(header.is-solid) main {
 }
 
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* kiri & kanan seimbang */
-  gap: 16px;
-  align-items: stretch;
-}
-
-/* kiri: 2 gambar atas-bawah */
-.gallery-left {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 16px;
-}
-
-/* item kiri */
-.gallery-left .left-item {
-  height: 420px; /* kalau mau tinggi total sama seperti dulu, nanti kita bagi */
-  overflow: hidden;
-}
-
-/* biar total kiri = 420px (2 item + 1 gap) */
-.gallery-left {
-  height: 420px;
-}
-.gallery-left .left-item {
-  height: calc((420px - 16px) / 2);
-}
-
-/* kanan: 4 gambar kecil 2x2 */
-.gallery-smalls {
+/* Home Gallery 4 images */
+.gallery-4{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  height: 420px;
 }
 
-.gallery-smalls .small {
-  height: calc((420px - 16px) / 2);
+/* no border, rapi */
+.gallery-4 .g-item{
   overflow: hidden;
+  border-radius: 18px;          /* kalau mau agak rounded, ganti 18px */
+  border: none;
+  box-shadow: none;
+  height: 240px;             /* tinggi kartu */
 }
 
-/* gambar full cover, no border */
-.gallery img {
+.gallery-4 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  border: none !important;
+  border: none;
   box-shadow: none !important;
-  border-radius: 0 !important;
 }
 
-/* responsive: di HP jadi 1 kolom */
-@media (max-width: 920px) {
-  .gallery {
+/* responsive: HP jadi 1 kolom */
+@media (max-width: 900px){
+  .gallery-4{
     grid-template-columns: 1fr;
   }
-  .gallery-left,
-  .gallery-smalls {
-    height: auto;
-  }
-  .gallery-left .left-item,
-  .gallery-smalls .small {
-    height: 200px;
+  .gallery-4 .g-item{
+    height: 220px;
   }
 }
-
-

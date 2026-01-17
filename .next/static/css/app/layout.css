@@ -1665,23 +1665,39 @@ body:has(header.is-solid) main {
 }
 
 
-.gallery {
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 24px;
-  align-items: stretch;
+/* Home Gallery 4 images */
+.gallery-4{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  gap: 16px;
 }
 
-.gallery .big {
-  height: 420px;
+/* no border, rapi */
+.gallery-4 .g-item{
+  overflow: hidden;
+  border-radius: 18px;          /* kalau mau agak rounded, ganti 18px */
+  border: none;
+  box-shadow: none;
+  height: 240px;             /* tinggi kartu */
 }
 
-.gallery-smalls {
-  grid-template-columns: 1fr;
-  gap: 24px;
+.gallery-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+  box-shadow: none !important;
 }
 
-.gallery .small {
-  height: calc((420px - 24px) / 2); /* dua kecil kanan pas setinggi big */
+/* responsive: HP jadi 1 kolom */
+@media (max-width: 900px){
+  .gallery-4{
+    grid-template-columns: 1fr;
+  }
+  .gallery-4 .g-item{
+    height: 220px;
+  }
 }
-
 

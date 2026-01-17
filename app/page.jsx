@@ -150,33 +150,19 @@ The diversity of marine life and the tranquil beach atmosphere make Crystal Bay 
               </p>
             </div>
 
-            <div className="gallery">
-              
-              <div className="gallery-left">
-                <div className="left-item">
-                  <img src="/image/sepuluh.png" alt="Gallery left 1" />
-                </div>
-                <div className="left-item">
-                  <img src="/image/dua.jpeg" alt="Gallery left 2" />
-                </div>
-              </div>
-
-            
-              <div className="gallery-smalls">
-                <div className="small"><img src="/image/tiga.jpeg" alt="Gallery 1" /></div>
-                <div className="small"><img src="/image/empat.jpeg" alt="Gallery 2" /></div>
-                <div className="small"><img src="/image/lima.jpeg" alt="Gallery 3" /></div>
-                <div className="small"><img src="/image/enam.jpeg" alt="Gallery 4" /></div>
-              </div>
+            <div className="gallery-4">
+              <div className="g-item"><img src="/image/dua.jpeg" alt="Gallery 1" /></div>
+              <div className="g-item"><img src="/image/tiga.jpeg" alt="Gallery 2" /></div>
+              <div className="g-item"><img src="/image/empat.jpeg" alt="Gallery 3" /></div>
+              <div className="g-item"><img src="/image/lima.jpeg" alt="Gallery 4" /></div>
             </div>
 
             <div className="center-btn">
-              <a className="btn primary" href="/gallery">
-                Open Full Gallery
-              </a>
+              <a className="btn primary" href="/gallery">Open Full Gallery</a>
             </div>
           </div>
         </section>
+
 
         <section id="testimoni">
           <div className="container">
