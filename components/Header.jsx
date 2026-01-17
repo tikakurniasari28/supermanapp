@@ -55,7 +55,7 @@ export default function Header() {
               <li><Link href="/gallery">Gallery</Link></li>
               <li><Link href="/#contact">Contact Us</Link></li>
               <li><Link href="/#testimoni">Customer Say</Link></li>
-              <li><Link href="/#owner">Our Owner</Link></li>
+              <li><Link href="/about">About Us</Link></li>
             </ul>
           </nav>
 
@@ -81,7 +81,7 @@ export default function Header() {
           <Link href="/gallery" onClick={closeMenu}>Gallery</Link>
           <Link href="/#contact" onClick={closeMenu}>Contact Us</Link>
           <Link href="/#testimoni" onClick={closeMenu}>Customer Say</Link>
-          <Link href="/#owner" onClick={closeMenu}>Our Owner</Link>
+          <Link href="/about" onClick={closeMenu}>About Us</Link>
         </div>
       </div>
     </header>

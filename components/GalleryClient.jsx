@@ -15,6 +15,8 @@ export default function GalleryClient() {
       { category: "underwater", full: "/image/delapan.jpeg", thumb: "/image/delapan.jpeg", alt: "underwater" },
       { category: "underwater", full: "/image/sembilan.jpeg", thumb: "/image/sembilan.jpeg", alt: "Underwater" },
       { category: "underwater", full: "/image/sepuluh.png", thumb: "/image/sepuluh.png", alt: "underwater" },
+      { category: "all", full: "/image/1.jpeg", thumb: "/image/1.jpeg", alt: "all" },
+      { category: "all", full: "/image/2.jpeg", thumb: "/image/2.jpeg", alt: "all" },
     ],
     []
   );
