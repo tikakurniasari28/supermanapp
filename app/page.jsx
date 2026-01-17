@@ -151,17 +151,22 @@ The diversity of marine life and the tranquil beach atmosphere make Crystal Bay 
             </div>
 
             <div className="gallery">
-              <div className="big">
-                <img src="/image/sepuluh.png" alt="Gallery big" />
+              
+              <div className="gallery-left">
+                <div className="left-item">
+                  <img src="/image/sepuluh.png" alt="Gallery left 1" />
+                </div>
+                <div className="left-item">
+                  <img src="/image/dua.jpeg" alt="Gallery left 2" />
+                </div>
               </div>
 
+            
               <div className="gallery-smalls">
-                <div className="small">
-                  <img src="/image/dua.jpeg" alt="Gallery 1" />
-                </div>
-                <div className="small">
-                  <img src="/image/tiga.jpeg" alt="Gallery 2" />
-                </div>
+                <div className="small"><img src="/image/tiga.jpeg" alt="Gallery 1" /></div>
+                <div className="small"><img src="/image/empat.jpeg" alt="Gallery 2" /></div>
+                <div className="small"><img src="/image/lima.jpeg" alt="Gallery 3" /></div>
+                <div className="small"><img src="/image/enam.jpeg" alt="Gallery 4" /></div>
               </div>
             </div>
 

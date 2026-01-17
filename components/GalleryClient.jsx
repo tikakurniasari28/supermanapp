@@ -5,15 +5,16 @@ import { useMemo, useState, useEffect } from "react";
 export default function GalleryClient() {
   const items = useMemo(
     () => [
-      { category: "guest", full: "/image/satu.jpeg", thumb: "/image/satu.jpeg", alt: "Guest" },
+      { category: "underwater", full: "/image/satu.jpeg", thumb: "/image/satu.jpeg", alt: "Underwater" },
       { category: "underwater", full: "/image/dua.jpeg", thumb: "/image/dua.jpeg", alt: "Underwater" },
       { category: "underwater", full: "/image/tiga.jpeg", thumb: "/image/tiga.jpeg", alt: "Underwater" },
       { category: "underwater", full: "/image/empat.jpeg", thumb: "/image/empat.jpeg", alt: "underwater" },
-      { category: "guest", full: "/image/lima.jpeg", thumb: "/image/lima.jpeg", alt: "Guest" },
+      { category: "underwater", full: "/image/lima.jpeg", thumb: "/image/lima.jpeg", alt: "Underwater" },
+      { category: "underwater", full: "/image/enam.png", thumb: "/image/enam.png", alt: "Underwater" },
       { category: "underwater", full: "/image/tujuh.jpeg", thumb: "/image/tujuh.jpeg", alt: "Underwater" },
       { category: "underwater", full: "/image/delapan.jpeg", thumb: "/image/delapan.jpeg", alt: "underwater" },
-      { category: "guest", full: "/image/sembilan.jpeg", thumb: "/image/sembilan.jpeg", alt: "Guest" },
-      { category: "underwater", full: "/image/sepuluh.jpeg", thumb: "/image/sepuluh.jpeg", alt: "underwater" },
+      { category: "underwater", full: "/image/sembilan.jpeg", thumb: "/image/sembilan.jpeg", alt: "Underwater" },
+      { category: "underwater", full: "/image/sepuluh.png", thumb: "/image/sepuluh.png", alt: "underwater" },
     ],
     []
   );
@@ -71,13 +72,12 @@ export default function GalleryClient() {
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
-          <p className="section-subtitle">Explore moments from our trips — guests, underwaters, and underwater scenes.</p>
+          <p className="section-subtitle">Explore moments from our trips — underwater scenes.</p>
         </div>
 
         <div className="filter">
           {[
             { key: "all", label: "All" },
-            { key: "guest", label: "Guest" },
             { key: "underwater", label: "Underwater" },
           ].map((b) => (
             <button
