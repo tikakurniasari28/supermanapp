@@ -6,3 +6,8 @@ echo .env
 echo .env.local
 echo .DS_Store
 ) > .gitignore
+
+node_modules/
+.next/
+out/
+
