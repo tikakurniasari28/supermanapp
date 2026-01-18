@@ -5,20 +5,80 @@ import { useMemo, useState, useEffect } from "react";
 export default function GalleryClient() {
   const items = useMemo(
     () => [
-      { category: "underwater", full: "/image/satu.jpeg", thumb: "/image/satu.jpeg", alt: "Underwater" },
-      { category: "underwater", full: "/image/dua.jpeg", thumb: "/image/dua.jpeg", alt: "Underwater" },
-      { category: "underwater", full: "/image/tiga.jpeg", thumb: "/image/tiga.jpeg", alt: "Underwater" },
-      { category: "underwater", full: "/image/empat.jpeg", thumb: "/image/empat.jpeg", alt: "underwater" },
-      { category: "underwater", full: "/image/lima.jpeg", thumb: "/image/lima.jpeg", alt: "Underwater" },
-      { category: "underwater", full: "/image/enam.png", thumb: "/image/enam.png", alt: "Underwater" },
-      { category: "underwater", full: "/image/tujuh.jpeg", thumb: "/image/tujuh.jpeg", alt: "Underwater" },
-      { category: "underwater", full: "/image/delapan.jpeg", thumb: "/image/delapan.jpeg", alt: "underwater" },
-      { category: "underwater", full: "/image/sembilan.jpeg", thumb: "/image/sembilan.jpeg", alt: "Underwater" },
-      { category: "underwater", full: "/image/sepuluh.png", thumb: "/image/sepuluh.png", alt: "underwater" },
-      { category: "all", full: "/image/1.jpeg", thumb: "/image/1.jpeg", alt: "all" },
-      { category: "all", full: "/image/2.jpeg", thumb: "/image/2.jpeg", alt: "all" },
+      {
+        category: "underwater",
+        full: "/public/image/satu.jpeg",
+        thumb: "/public/image/satu.jpeg",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/dua.jpeg",
+        thumb: "/public/image/dua.jpeg",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/tiga.jpeg",
+        thumb: "/public/image/tiga.jpeg",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/empat.jpeg",
+        thumb: "/public/image/empat.jpeg",
+        alt: "underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/lima.jpeg",
+        thumb: "/public/image/lima.jpeg",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/enam.png",
+        thumb: "/public/image/enam.png",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/tujuh.jpeg",
+        thumb: "/public/image/tujuh.jpeg",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/delapan.jpeg",
+        thumb: "/public/image/delapan.jpeg",
+        alt: "underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/sembilan.jpeg",
+        thumb: "/public/image/sembilan.jpeg",
+        alt: "Underwater",
+      },
+      {
+        category: "underwater",
+        full: "/public/image/sepuluh.png",
+        thumb: "/public/image/sepuluh.png",
+        alt: "underwater",
+      },
+      {
+        category: "all",
+        full: "/public/image/1.jpeg",
+        thumb: "/public/image/1.jpeg",
+        alt: "all",
+      },
+      {
+        category: "all",
+        full: "/public/image/2.jpeg",
+        thumb: "/public/image/2.jpeg",
+        alt: "all",
+      },
     ],
-    []
+    [],
   );
 
   const [filter, setFilter] = useState("all");
@@ -74,7 +134,9 @@ export default function GalleryClient() {
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
-          <p className="section-subtitle">Explore moments from our trips — underwater scenes.</p>
+          <p className="section-subtitle">
+            Explore moments from our trips — underwater scenes.
+          </p>
         </div>
 
         <div className="filter">
@@ -118,10 +180,23 @@ export default function GalleryClient() {
             if (e.target?.id === "lightbox") closeLightbox();
           }}
         >
-          <button id="lightboxClose" className="lightbox-close" type="button" onClick={closeLightbox}>
+          <button
+            id="lightboxClose"
+            className="lightbox-close"
+            type="button"
+            onClick={closeLightbox}
+          >
             &times;
           </button>
-          <button id="lightboxPrev" className="lightbox-nav prev" type="button" onClick={(e) => { e.stopPropagation(); prev(); }}>
+          <button
+            id="lightboxPrev"
+            className="lightbox-nav prev"
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              prev();
+            }}
+          >
             &#10094;
           </button>
           {open && visibleItems[currentIndex]?.full ? (
@@ -132,7 +207,15 @@ export default function GalleryClient() {
               alt=""
             />
           ) : null}
-          <button id="lightboxNext" className="lightbox-nav next" type="button" onClick={(e) => { e.stopPropagation(); next(); }}>
+          <button
+            id="lightboxNext"
+            className="lightbox-nav next"
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              next();
+            }}
+          >
             &#10095;
           </button>
         </div>
