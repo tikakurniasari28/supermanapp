@@ -74,7 +74,7 @@ export default function HomePage() {
             text={`Mangrove Point is one of the most popular snorkeling spots in Nusa Lembongan, well known for its crystal-clear waters and calm conditions. This location is perfect for beginners, as the ocean currents are generally mild and the snorkeling area is wide and safe.
 The main highlights of Mangrove Point are its healthy coral reefs with vibrant colors and the abundance of tropical fish swimming in shallow waters. This area is also a natural habitat for sea turtles, and on certain occasions, lucky visitors may even spot dolphins passing through the area.
 With excellent water visibility, Mangrove Point offers a clear, comfortable, and unforgettable underwater snorkeling experience.`}
-            img="image/mangrove.jpeg"
+            img="/public/image/mangrove.jpeg"
             alt="Mangrove Bay"
           />
 
