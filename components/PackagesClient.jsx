@@ -42,6 +42,7 @@ export default function PackagesClient() {
                 "Full Equipment",
                 "Sharing Boat",
                 "Free Mineral Water & Fruit",
+                "Documentation",
               ],
             },
             {
@@ -69,6 +70,8 @@ export default function PackagesClient() {
                 "Full Equipment",
                 "Private Boat",
                 "Free Mineral Water & Fruit",
+                "Documentation",
+                "3 Spot : Manta Point, Crystal, & Mangrove",
               ],
             },
             {

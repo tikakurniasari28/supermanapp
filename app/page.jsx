@@ -74,7 +74,7 @@ export default function HomePage() {
             text={`Mangrove Point is one of the most popular snorkeling spots in Nusa Lembongan, well known for its crystal-clear waters and calm conditions. This location is perfect for beginners, as the ocean currents are generally mild and the snorkeling area is wide and safe.
 The main highlights of Mangrove Point are its healthy coral reefs with vibrant colors and the abundance of tropical fish swimming in shallow waters. This area is also a natural habitat for sea turtles, and on certain occasions, lucky visitors may even spot dolphins passing through the area.
 With excellent water visibility, Mangrove Point offers a clear, comfortable, and unforgettable underwater snorkeling experience.`}
-            img="/public/image/mangrove.jpeg"
+            img="image/mangrove.jpeg"
             alt="Mangrove Bay"
           />
 
@@ -173,11 +173,16 @@ The diversity of marine life and the tranquil beach atmosphere make Crystal Bay 
 
               <div className="testi">
                 <div className="small">
-                  <img src="/image/testi 1.jpeg" alt="testimoni says" />
+                  <img src="/image/testi 11.jpeg" alt="testimoni says" />
                   <img src="/image/testi 2.jpeg" alt="testimoni Customer" />
                   <img src="/image/testi 3.jpeg" alt="testimoni snorkeling" />
                   <img src="/image/testi 4.jpeg" alt="testimoni Customer" />
                   <img src="/image/testi 5.jpeg" alt="testimoni snorkeling" />
+                  <img src="/image/testi 6.jpeg" alt="testimoni cust" />
+                  <img src="/image/testi 7.jpeg" alt="testimoni Customer" />
+                  <img src="/image/testi 8.jpeg" alt="testimoni snorkeling" />
+                  <img src="/image/testi 9.jpeg" alt="testimoni cust" />
+                  <img src="/image/testi 10.jpeg" alt="testimoni snorkeling" />
                 </div>
               </div>
             </div>
