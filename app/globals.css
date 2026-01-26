@@ -1753,5 +1753,35 @@ body:has(header.is-solid) main {
 }
 
 
+.rating-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* ini bikin dia benar2 di tengah */
+  margin-top: 20px;
+}
 
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+.stars {
+  color: gold;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+.rating-text {
+  margin-top: 6px;
+  font-size: 14px;
+  color: white;
+  opacity: 0.85;
+}
+
+@media (min-width: 1024px) {
+  .rating-wrapper {
+    justify-content: center;
+  }
+}

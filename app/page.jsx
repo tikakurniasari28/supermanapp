@@ -60,6 +60,12 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
+            <div className="rating-wrapper">
+                <div className="rating-box">
+                  <div className="stars">★★★★★</div>
+                  <p className="rating-text">Rated 5.0 From Reviews</p>
+                </div>
+              </div>
           </div>
         </section>
 
