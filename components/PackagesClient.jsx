@@ -6,7 +6,7 @@ const PHONE_NUMBER = "6282339536671";
 
 function openWhatsApp({ pkg, price, spots }) {
   const message =
-    `Hi Superman Snorkeling 👋\n\n` +
+    `Hi Superman Snorkeling \n\n` +
     `I want to book:\n` +
     `Package: ${pkg}\n` +
     `Price: ${price}\n` +

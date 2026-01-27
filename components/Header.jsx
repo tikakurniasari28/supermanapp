@@ -38,7 +38,7 @@ export default function Header() {
           <Link className="brand" href="/" aria-label="Superman Snorkeling" onClick={closeMenu}>
             <span className="logo" aria-hidden="true">
               <img
-                src="/public/image/IMG_1567.PNG"
+                src="image/IMG_1567.PNG"
                 alt="Superman Snorkeling Logo"
                 width={40}
                 height={40}
