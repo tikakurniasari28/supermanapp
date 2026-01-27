@@ -71,7 +71,7 @@ export default function PackagesClient() {
                 "Private Boat",
                 "Free Mineral Water & Fruit",
                 "Documentation",
-                "3 Spot : Manta Point, Crystal, & Mangrove",
+                "3 Spot : Manta Point, Crystal Bay, & Mangrove",
               ],
             },
             {
