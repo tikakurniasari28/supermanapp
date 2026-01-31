@@ -1106,15 +1106,46 @@ textarea{min-height: 120px; resize: vertical}
 }
 
 /* Bottom */
-.footer-bottom{
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 18px;
   margin-top: 18px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(15,23,42,.08);
-  text-align: center;
-  color: var(--muted);
-  font-weight: 700;
-  font-size: 0.88rem; /* lebih kecil */
+  border-top: 1px solid rgba(0,0,0,.08);
+  font-size: 14px;
 }
+
+.footer-bottom p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.footer-legal {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.85;
+}
+
+.footer-legal a {
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile: legal turun ke bawah dan center */
+@media (max-width: 640px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 
 /* bikin footer lebih sempit dari konten page lain */
 .footer .container {

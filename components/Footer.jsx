@@ -70,9 +70,13 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>
-            © {year} Superman Snorkeling. All rights reserved.
-          </p>
+          <p>© {year} Superman Snorkeling. All rights reserved.</p>
+
+          <nav className="footer-legal" aria-label="Legal">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <span aria-hidden="true"> · </span>
+            <Link href="/terms">Terms &amp; Conditions</Link>
+          </nav>
         </div>
       </div>
     </footer>
