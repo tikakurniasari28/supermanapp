@@ -73,7 +73,7 @@ export default function Footer() {
           <p>© {year} Superman Snorkeling. All rights reserved.</p>
 
           <nav className="footer-legal" aria-label="Legal">
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/privacy_police">Privacy Policy</Link>
             <span aria-hidden="true"> · </span>
             <Link href="/terms">Terms &amp; Conditions</Link>
           </nav>
